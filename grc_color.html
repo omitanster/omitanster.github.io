@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Color Test</title>
+
+    <style>
+      .box {
+        width: 220px;
+        height: 220px;
+        margin: 20px;
+        border-width: 8px;
+        border-style: solid;
+        display: inline-block;
+        font-family: Arial, sans-serif;
+        color: white;
+        text-align: center;
+        line-height: 220px;
+        font-weight: bold;
+      }
+
+      /* 1️⃣ Background red in P3, Border red in sRGB */
+      .red-test {
+        background: color(display-p3 1 0 0);
+        border-color: color(srgb 1 0 0);
+      }
+
+      /* 2️⃣ Background green in rgb, Border green in P3 */
+      .green-test {
+        background: rgb(0, 255, 0);
+        border-color: color(display-p3 0 1 0);
+      }
+
+      /* 3️⃣ Background blue in rgb, Border blue in sRGB */
+      .blue-test {
+        background: rgb(0, 0, 255);
+        border-color: color(srgb 0 0 1);
+      }
+
+      /* 4️⃣ Background black using LCH, Border red using HSL */
+      .black-test {
+        background: lch(0% 0 0);
+        border-color: hsl(0 100% 50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Color Testing</h2>
+
+    <div class="box red-test">P3 Red / sRGB Border</div>
+    <div class="box green-test">RGB Green / P3 Border</div>
+    <div class="box blue-test">RGB Blue / sRGB Border</div>
+    <div class="box black-test">LCH Black / HSL Red Border</div>
+
+    <h2>RGB P3</h2>
+    <img src="RGB P3.jpg" alt="Description of the image" />
+
+    <h2>RGB sRGB</h2>
+    <img src="RGB sRGB.jpg" alt="Description of the image" />
+
+    <h2>RGB untagged</h2>
+    <img src="RGB untagged.jpg" alt="Description of the image" />
+  </body>
+</html>
