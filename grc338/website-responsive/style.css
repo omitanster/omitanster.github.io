@@ -250,13 +250,11 @@ article {
     background-color: #ffffff;
     max-width: 75em;
     margin: 0 auto;
-    min-height: 100vh;
   }
 
   div.home-container {
     background-color: url(home-background.jpg);
     margin: 0 auto;
-    min-height: 100vh;
     max-width: 75em;
   }
 
