@@ -1,0 +1,327 @@
+/*CSS document*/
+
+html,
+body,
+div,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+div.container,
+div.home-container {
+  max-width: 40em;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  display: block;
+  padding-top: 1em;
+}
+
+h1 img {
+  width: 8em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  /* margin-left: 0.5em; */
+}
+
+p,
+figcaption {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #5b70ae;
+  font-weight: bold;
+  padding-top: 0.3em;
+  /* margin-left: 0.7em; */
+}
+
+section.mainstory h2 {
+  font-size: 3em;
+  padding-top: 0em;
+  margin-left: 0.2em;
+}
+
+section.tertiary h2 {
+  border-top: 1px solid #5b70ae;
+}
+
+p {
+  font-size: 1em;
+  font-family: sans-serif;
+  padding-bottom: 1em;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+figcaption {
+  font-size: 0.8em;
+  color: #808080;
+  font-style: italic;
+  font-family: sans-serif;
+  padding-bottom: 1em;
+}
+
+nav ul li a {
+  color: #5b70ae;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+  margin-left: 0.5em;
+}
+
+nav ul {
+  list-style: none;
+}
+
+aside {
+  background-color: #dddaff;
+  padding: 0 1em;
+}
+
+aside h2,
+aside p,
+aside figcaption {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 50em) {
+  article {
+    max-width: 40em;
+    margin: auto; /* centers it horizontally */
+  }
+
+  div.container {
+    max-width: 40em;
+    margin: 0 auto;
+    min-height: 100vh;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 1em;
+  }
+
+  h1 img,
+  nav ul li a,
+  nav ul,
+  h2,
+  p,
+  figcaption,
+  section.mainstory h2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  h1 img,
+  nav ul li a,
+  h2,
+  main p,
+  article p,
+  section.mainstory h2 {
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  div.home-container {
+    max-width: 80em;
+    padding: 0 1em;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1em;
+  }
+
+  div.container {
+    max-width: 60em;
+    padding: 0 1em;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1em;
+  }
+
+  div.container aside {
+    margin-top: 0;
+  }
+
+  header,
+  footer {
+    grid-column: 1/3;
+  }
+
+  div.home-container main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+
+  section.mainstory {
+    grid-column: 2/4;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.mainstory a {
+    flex: 1 0 12em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.mainstory a figure {
+    flex: 1 0 12em;
+    display: flex;
+  }
+
+  section.mainstory a figure img {
+    object-fit: cover;
+  }
+
+  section.mainstory a h2 {
+    flex: 0 0 1em;
+    /*margin-top: 0.5em;*/
+  }
+
+  section.mainstory p {
+    flex: 0 0 4em;
+  }
+
+  div.home-container aside {
+    background: none;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  /*this is secondary now*/
+  section.secondary {
+    display: flex;
+  }
+
+  section.secondary a {
+    flex: 1 0 12em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.secondary a figure {
+    flex: 1 0 12em;
+    display: flex;
+  }
+
+  section.secondary a figure img {
+    object-fit: cover;
+  }
+
+  section.secondary a h2 {
+    flex: 0 0 1em;
+    /*margin-top: 0.5em;*/
+  }
+
+  section.secondary p {
+    flex: 0 0 4em;
+  }
+
+  article {
+    max-width: none;
+    margin: 0;
+  }
+}
+
+footer {
+  box-sizing: border-box;
+  background: #5b70ae;
+  color: #ffffff;
+  padding-top: 0.5em;
+}
