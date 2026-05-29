@@ -1,0 +1,355 @@
+/*CSS document*/
+
+/*prettier-ignore*/
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; }
+
+div.container,
+div.home-container {
+  max-width: 40em;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  display: block;
+  padding-top: 1em;
+}
+
+h1 img {
+  width: 20em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+p,
+figcaption {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #52894d;
+  font-family: "inter-18pt", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 0.3em;
+}
+
+section.mainstory h2 {
+  font-size: 3em;
+  padding-top: 0em;
+  margin-left: 0.2em;
+}
+
+section.tertiary h2 {
+  border-top: 1px solid #52894d;
+}
+
+p {
+  font-size: 1em;
+  font-family: "inter-18pt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 1em;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+figcaption {
+  font-size: 0.8em;
+  color: #52894d;
+  font-style: italic;
+  font-family: sans-serif;
+  padding-bottom: 1em;
+}
+
+nav ul li a {
+  color: #52894d;
+  font-size: 1em;
+  font-family: "inter-18pt", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  list-style: none;
+  text-decoration: none;
+  margin-left: 0.5em;
+}
+
+nav ul {
+  list-style: none;
+}
+
+aside {
+  background-color: #dae9ff;
+  padding: 0 1em;
+}
+
+aside h2,
+aside p,
+aside figcaption {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 50em) {
+  article {
+    max-width: 40em;
+    margin: auto;
+  }
+
+  div.container {
+    max-width: 40em;
+    margin: 0 auto;
+    min-height: 100vh;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 1em;
+  }
+
+  h1 img,
+  nav ul li a,
+  nav ul,
+  h2,
+  p,
+  figcaption,
+  section.mainstory h2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  h1 img,
+  nav ul li a,
+  h2,
+  main p,
+  article p,
+  section.mainstory h2 {
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  div.home-container {
+    max-width: 80em;
+    padding: 0 1em;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1em;
+  }
+
+  div.container {
+    max-width: 60em;
+    padding: 0 1em;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1em;
+  }
+
+  div.container aside {
+    margin-top: 0;
+  }
+
+  header,
+  footer {
+    grid-column: 1/3;
+  }
+
+  div.home-container main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+
+  section.mainstory {
+    grid-column: 2/4;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.mainstory a {
+    flex: 1 0 12em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.mainstory a figure {
+    flex: 1 0 12em;
+    display: flex;
+  }
+
+  section.mainstory a figure img {
+    object-fit: cover;
+  }
+
+  section.mainstory a h2 {
+    flex: 0 0 1em;
+    /*margin-top: 0.5em;*/
+  }
+
+  section.mainstory p {
+    flex: 0 0 4em;
+  }
+
+  div.home-container aside {
+    background: none;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  /*this is secondary now*/
+  section.secondary {
+    display: flex;
+  }
+
+  section.secondary a {
+    flex: 1 0 12em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.secondary a figure {
+    flex: 1 0 12em;
+    display: flex;
+  }
+
+  section.secondary a figure img {
+    object-fit: cover;
+  }
+
+  section.secondary a h2 {
+    flex: 0 0 1em;
+  }
+
+  section.secondary p {
+    flex: 0 0 4em;
+  }
+
+  article {
+    max-width: none;
+    margin: 0;
+  }
+}
+
+footer {
+  box-sizing: border-box;
+  background: #52894d;
+  color: #ffffff;
+  padding-top: 0.5em;
+}
+
+/*---- PHOTOGALLERY!!!  ------*/
+
+section.galleryImg {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: calc(66% + 5em);
+  margin-bottom: 0.5em;
+}
+
+section.galleryImg figure {
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+input:nth-of-type(1):checked ~ section.galleryImg figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ section.galleryImg figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ section.galleryImg figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ section.galleryImg figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ section.galleryImg figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ section.galleryImg figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ section.galleryImg figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ section.galleryImg figure:nth-of-type(8) {
+  opacity: 1;
+}
+
+nav.galleryNav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.2em;
+}
+
+nav.galleryNav label img {
+  display: block;
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding-top: 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+main.photogallery {
+  position: relative;
+  padding: 0em;
+  grid-column: 1 / 3;
+}
+
+section.galleryImg figure img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+main.photogallery h2 {
+  font-size: 3em;
+  padding-top: 0;
+}
+
+/* =-------NEWSLETTER------ */
+
+main.newsletter {
+  grid-column: 1 / 3;
+  padding: 2em 0;
+}
+
+main.newsletter h2 {
+  font-size: 3em;
+  padding-top: 0;
+}
+
+main.newsletter form * {
+  display: block;
+  margin-bottom: 0.2em;
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 0.5em;
+}
+
+main.newsletter button {
+  background-color: #52894d;
+  color: #ffffff;
+  border: none;
+  padding: 0.8em 2em;
+  font-family: "inter-18pt", sans-serif;
+  font-weight: 600;
+  width: auto;
+}
+
+section.newsletter-link a h2 {
+  font-size: 3em;
+  color: #52894d;
+}
+
+main.newsletter input {
+  width: 20em;
+}
+
+main.newsletter input[type="checkbox"] {
+  display: inline;
+  width: auto;
+}
+
+main.newsletter p {
+  margin-left: 0;
+}

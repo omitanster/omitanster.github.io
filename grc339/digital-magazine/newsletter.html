@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/oav3rjz.css" />
+    <title>Newsletter — The Matcha Review</title>
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          <a href="index.html"
+            ><img src="logo.svg" alt="the matcha review."
+          /></a>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Wellness</a></li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Opinion</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="newsletter">
+        <h2>Stay in the Loop</h2>
+        <p>
+          Sign up to receive the latest from The Matcha Review — cafe reviews,
+          wellness reads, and more delivered straight to your inbox.
+        </p>
+
+        <form>
+          <div class="form-fields">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your@email.com"
+            />
+          </div>
+
+          <fieldset>
+            <legend>Choose your newsletters</legend>
+            <label
+              ><input type="checkbox" name="newsletter" value="cafe-reviews" />
+              Cafe Reviews</label
+            >
+            <label
+              ><input type="checkbox" name="newsletter" value="matcha-picks" />
+              Matcha Picks</label
+            >
+            <label
+              ><input type="checkbox" name="newsletter" value="wellness" />
+              Wellness & Tech</label
+            >
+            <label
+              ><input type="checkbox" name="newsletter" value="opinion" />
+              Opinion</label
+            >
+            <label
+              ><input type="checkbox" name="newsletter" value="weekly-digest" />
+              Weekly Digest</label
+            >
+          </fieldset>
+
+          <button type="submit">Subscribe</button>
+        </form>
+
+        <figure>
+          <img src="matcahdrink.png" alt="A matcha latte on a table." />
+        </figure>
+      </main>
+
+      <footer>
+        <p>© All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
