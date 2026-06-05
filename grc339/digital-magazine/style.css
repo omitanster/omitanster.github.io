@@ -403,6 +403,10 @@ main.newsletter p {
   h1 img {  
     opacity: 0;  
     }   
+
+  .mainstory aside h2{
+    color: #000000;
+  }
   
 }
 
