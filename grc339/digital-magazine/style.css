@@ -57,6 +57,10 @@ p {
   padding-bottom: 1em;
 }
 
+figcaption {
+  font-family: "inter-18pt", sans-serif;
+}
+
 a {
   color: #000000;
   text-decoration: none;
